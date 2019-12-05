@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.inventoryapp.EditorActivity"
+    tools:showIn="@layout/activity_editor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/first_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*All fields are required"
+                android:textColor="@android:color/holo_red_light"
+                android:id="@+id/m1"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:id="@+id/name_view_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="Prouduct Name"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="                "
+                        android:textColor="@android:color/holo_red_light" />
+
+                    <EditText
+                        android:id="@+id/edittext_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:inputType="textShortMessage"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_view_group"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="Prouduct Price"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*Only Numbers"
+                        android:textColor="@android:color/holo_red_light"
+                        android:id="@+id/m2"/>
+
+                    <com.example.android.inventoryapp.CustomEditText
+                        android:id="@+id/edittext_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/second_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/first_card_view"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:id="@+id/id_view_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="ID"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+                <TextView
+                    android:id="@+id/id_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second_card_view"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*All fields are required"
+                android:textColor="@android:color/holo_red_light"
+                android:id="@+id/m3"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Quantity"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+
+                    <TextView
+                        android:id="@+id/quantity_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:id="@+id/decrement_qt_edit"
+                        android:layout_width="100dp"
+                        android:layout_height="75dp"
+                        android:layout_toLeftOf="@id/divider"
+                        android:background="@color/colorAccent"
+                        android:elevation="8dp"
+                        android:onClick="decrementQuantity"
+                        android:text="- 1" />
+
+                    <Button
+                        android:id="@+id/increment_qt_edit"
+                        android:layout_width="100dp"
+                        android:layout_height="75dp"
+                        android:layout_toRightOf="@id/divider"
+                        android:background="@color/colorAccent"
+                        android:elevation="8dp"
+                        android:onClick="incrementQuantity"
+                        android:text="+ 1" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/sup_name_view_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Supplier Name"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+
+                        <EditText
+                            android:id="@+id/edittext_sup_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:inputType="textShortMessage"
+                            android:maxLines="1" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/sup_phone_view_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sup_name_view_group"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Supllier Phone"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+
+                        <EditText
+                            android:id="@+id/edittext_sup_phone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:inputType="textShortMessage"
+                            android:maxLines="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sup_email_view_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sup_phone_view_group"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Supllier Email"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+
+                        <EditText
+                            android:id="@+id/edittext_sup_email"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:inputType="textShortMessage"
+                            android:maxLines="1" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/order_button_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginRight="75dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:elevation="20dp"
+                    android:onClick="order"
+                    android:text="Order" />
+
+                <TextView
+                    android:id="@+id/m4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="You must take a picture of the product by clicking on the camera icon on the top of the screen."
+                    android:textColor="@android:color/holo_red_light" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

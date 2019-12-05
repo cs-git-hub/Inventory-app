@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.inventoryapp.Details">
+
+
+    <item
+        android:id="@+id/delete_single_entry_edit"
+        android:title="Delete Entry"
+        android:icon="@drawable/ic_delete_white_24dp"
+        app:showAsAction="always"  />
+
+</menu>
